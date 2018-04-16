@@ -1,35 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Icarus</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
-<body>
-	<h1>Welcome to Icarus.</h1>
-	<div id="menu">
-        <p class="logout"><a id="logout" href="login.html">Log out</a></p>
-        <div style="clear:both"></div>
-    </div>
-	<br>
-	</br>
-	<p>Post your quesiton here</p>
-                    <td>
-                        
-                        <textarea name="information" cols="50" rows="8" ></textarea>
-                    </td>
-                        
-                </tr>
-    <form name="message" action="">
-        <input name="usermsg" type="text" id="usermsg" size="50" />
-        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
-    </form>
+ <html lang="en" class="no-js"> 
+    <head>
+        <meta charset="UTF-8" />
+        <title>Icarus</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+   
+						<link rel="stylesheet" type="text/css" href="css/style.css">
+
+							<style>
+			body
+				{
+					background-image: url('img/cuboulder_bg.jpg');
+					background-attachment: fixed;
+					background-size: 100% 100%;
+				}
+		</style>
+    </head>
+    <body>
+		<div id="navbar">	
+		</div>
+        <div id="container"><br>
+			    <div id="login-right">
+				<div class="login-margin"></div>
+				
+				<form  method="post" autocomplete="on"> 
+                                <h2>Sign In</h2> 
+                                 <input class="long" name="username" type="text" placeholder="Username" required  autofocus >
+                                    <input class="short-pass" name="password" type="password" placeholder="Password" required >       
+                               <button class="btn-signin" type="submit" name="login">Sign In</button>
+                             
+                            </form>
+				   <form method="post" autocomplete="on"> 
+                                <h2> Sign Up </h2> 
+							
+                                    <input class="long"  name="username" required="required" type="text" placeholder="Username" />                               
+                                    <input class="long"  name="password" required="required" type="password" placeholder="Password"/>                             
+                                    <input  class="name"  name="firstname" required="required" type="text" placeholder="First Name"/>
+                                    <input  class="name"  name="lastname" required="required" type="text" placeholder="Last Name"/>
+                                </p>
+							
+							
+								<select id="passwordsignup"  name=“Occupation” required >
+										<option>Teacher</option>
+										<option>Student</option>
+								</select>
+                             
+           					<button class="btn-signup" type="submit" name="signup" onclick="signup()">Sign Up</button>
+
+                            </form>
+				
+				
+				
+				
+				</div>
+							
 
 
+							
+        		<div id="login-left">
+				<h1>Welcome to Icarus.</h1>
+					<br>
+					<p>
+					Connect with your classmates and teachers during the <br> lecture.
+					Get in-the-moment updates on the questions <br>
+					that you don’t understand. Be prepare for your academic <br> achievement. Go for it!
+					</p>
+			</div>
+			<div class="clear"></div>
+			
+             
+				
+                
+							
+         			<footer>All Rights Reserved Icarus | Copyright &copy; 2018</footer>
+
+        </div>
+    </body>
 	
-       
-
-
-</body> 
 </html>
+
+
+
+
